@@ -72,6 +72,8 @@ public class WinMenu : MonoBehaviour
 
     void Update()
     {
+        sound.volume = PlayerPrefs.GetFloat("Volume");
+
         retryButton.interactable = winner.position == Vector3.zero;
         retryButton.GetComponent<EventTrigger>().enabled = retryButton.interactable;
         menuButton.interactable = winner.position == Vector3.zero;

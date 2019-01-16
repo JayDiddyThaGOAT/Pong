@@ -5,10 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour {
-
-    public Text title;
-    public float titleStrobeDuration;
-
     public Toggle redPaddle, bluePaddle;
     public Text redControls, blueControls;
     public Button playButton, exitButton;
@@ -29,8 +25,7 @@ public class StartMenu : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        float t = Mathf.PingPong(Time.time / titleStrobeDuration, 1f);
-        title.color = Color.Lerp(Color.red, Color.blue, t);
+        sound.volume = PlayerPrefs.GetFloat("Volume");
 
         float redOn, blueOn;
         if (redPaddle.isOn)
@@ -55,14 +50,9 @@ public class StartMenu : MonoBehaviour {
 
     void Play()
     {
-        if (redPaddle.isOn && bluePaddle.isOn)
-            SceneManager.LoadScene("TwoPlayer");
-        else if (redPaddle.isOn && !bluePaddle.isOn)
-            SceneManager.LoadScene("RedPlayer");
-        else if (!redPaddle.isOn && bluePaddle.isOn)
-            SceneManager.LoadScene("BluePlayer");
-        else
-            SceneManager.LoadScene("NoPlayer");
+        PlayerPrefs.SetInt("Red Player", redPaddle.isOn ? 1 : 0);
+        PlayerPrefs.SetInt("Blue Player", bluePaddle.isOn ? 1 : 0);
+        SceneManager.LoadScene("GameMenu");
     }
 
     public void ExitGame(AudioClip clip)

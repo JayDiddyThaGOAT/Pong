@@ -72,13 +72,18 @@ public class Ball : MonoBehaviour
 
     void OnBecameInvisible()
     {
-        ResetBall();
-        timer.PlayInFixedTime(Animator.StringToHash("Countdown"), 0, 0f);
-        Invoke("Launch", 4f);
+        if (Application.isPlaying)
+        {
+            ResetBall();
+            timer.PlayInFixedTime(Animator.StringToHash("Countdown"), 0, 0f);
+            Invoke("Launch", 4f);
+        }
     }
 
     void Update()
     {
+        sound.volume = PlayerPrefs.GetFloat("Volume");
+
         redScoreUI.text = redScore.ToString();
         blueScoreUI.text = blueScore.ToString();
 
@@ -87,6 +92,11 @@ public class Ball : MonoBehaviour
 
         if (blueScore == PlayerPrefs.GetInt("Max Score"))
             blueScoreUI.color = Color.white;
+    }
+
+    private void FixedUpdate()
+    {
+        body.constraints = PauseMenu.isPaused ? RigidbodyConstraints2D.FreezeAll : RigidbodyConstraints2D.None;
     }
 
     void OnCollisionEnter2D(Collision2D col)

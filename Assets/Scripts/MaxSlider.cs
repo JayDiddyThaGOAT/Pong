@@ -48,6 +48,7 @@ public class MaxSlider : MonoBehaviour {
         maxScoreSlider = GetComponent<Slider>();
         maxScoreSlider.value = PlayerPrefs.GetInt("Max Score");
         maxScore = GetComponentsInChildren<Text>()[1];
+        maxScore.text = PlayerPrefs.GetInt("Max Score").ToString();
 
         sound = GetComponent<AudioSource>();
         maxScoreSlider.onValueChanged.AddListener(delegate { UpdateMaxScore(); });

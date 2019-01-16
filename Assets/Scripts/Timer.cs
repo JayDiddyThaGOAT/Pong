@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Timer : MonoBehaviour {
-    private AudioSource sound;
+    private AudioSource timerSound;
 
     void Start()
     {
-        sound = GetComponent<AudioSource>();
+        timerSound = GetComponent<AudioSource>();
     }
 
     public void Play(AudioClip clip)
     {
-        sound.clip = clip;
-        sound.PlayOneShot(clip);
+        timerSound.volume = PlayerPrefs.GetFloat("Volume");
+        timerSound.clip = clip;
+        timerSound.PlayOneShot(clip);
     }
 }

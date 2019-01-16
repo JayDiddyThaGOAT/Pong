@@ -8,21 +8,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: f6951f9d289cc184997686c5754f39d4
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/TwoPlayer.unity
-    guid: ff86e63a8eb6e774c9a0c938e875f81b
-  - enabled: 1
-    path: Assets/Scenes/BluePlayer.unity
-    guid: 7d9f3ac02dbe2664bbbf7339f033c388
-  - enabled: 1
-    path: Assets/Scenes/RedPlayer.unity
-    guid: ef4e988ea09c10743be1503ecb1705a7
-  - enabled: 1
-    path: Assets/Scenes/NoPlayer.unity
-    guid: b67ba22b11ede26409ae21a8df6f9f78
+    path: Assets/Scenes/GameMenu.unity
+    guid: 54a5e2879a806ce42837b4aea414026f
   - enabled: 1
     path: Assets/Scenes/BlueWins.unity
-    guid: 7efb0f31dbc65be4eb38d95fca26a4f2
+    guid: fbd14cf9a72fd7347bf587feb371009d
   - enabled: 1
     path: Assets/Scenes/RedWins.unity
-    guid: c36d96af2169e7346aa87b2f6842d4ce
+    guid: 7cb6bab56ac5ae74186700ff2014911e

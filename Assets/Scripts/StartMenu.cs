@@ -38,6 +38,8 @@ public class StartMenu : MonoBehaviour {
         else
             blueOn = 0f;
 
+        playButton.interactable = PlayerPrefs.GetInt("Max Score") > 0;
+
         redControls.color = new Color(1f, 0f, 0f, redOn);
         blueControls.color = new Color(0f, 0f, 1f, blueOn);
 	}

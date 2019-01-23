@@ -16,6 +16,13 @@ public class WinMenu : MonoBehaviour
 
     private AudioSource sound;
 
+    public void PlayClip(AudioClip clip)
+    {
+        sound.clip = clip;
+        sound.pitch = 1f;
+        sound.Play();
+    }
+
     IEnumerator Retry(float time)
     {
         yield return new WaitForSeconds(time);
@@ -55,6 +62,7 @@ public class WinMenu : MonoBehaviour
     void Start()
     {
         sound = GetComponent<AudioSource>();
+        sound.playOnAwake = true;
 
         maxScoreSlider = FindObjectOfType<MaxSlider>();
         volumeSlider = FindObjectOfType<VolumeSlider>();

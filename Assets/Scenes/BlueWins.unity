@@ -330,8 +330,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1554366150}
-          m_MethodName: PlayOneShot
+        - m_Target: {fileID: 1554366151}
+          m_MethodName: PlayClip
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 79d686dc7f909834691f6923ed48c64d,
@@ -1200,8 +1200,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1554366150}
-          m_MethodName: PlayOneShot
+        - m_Target: {fileID: 1554366151}
+          m_MethodName: PlayClip
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 79d686dc7f909834691f6923ed48c64d,
@@ -1332,8 +1332,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1554366150}
-          m_MethodName: PlayOneShot
+        - m_Target: {fileID: 1554366151}
+          m_MethodName: PlayClip
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 79d686dc7f909834691f6923ed48c64d,
@@ -2080,11 +2080,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1465503021}
---- !u!82 &1554366150 stripped
-AudioSource:
-  m_PrefabParentObject: {fileID: 82065008859138300, guid: 7a9458060efd0914b8f1a73042d7a8bc,
-    type: 2}
-  m_PrefabInternal: {fileID: 1852754768}
 --- !u!114 &1554366151 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114281152987120190, guid: 7a9458060efd0914b8f1a73042d7a8bc,

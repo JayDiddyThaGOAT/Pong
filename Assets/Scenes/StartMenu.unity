@@ -1127,10 +1127,13 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< refs/remotes/Pong/master
     - target: {fileID: 1142325843100562, guid: 9232b5cd01ac6454da9aeec942d944d9, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> Fixed UI Bug Where Highest Max Score Displayed "10"
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9232b5cd01ac6454da9aeec942d944d9, type: 2}
   m_IsPrefabParent: 0
@@ -1388,7 +1391,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< refs/remotes/Pong/master
   m_AnchoredPosition: {x: 10, y: -100}
+=======
+  m_AnchoredPosition: {x: 10, y: 75}
+>>>>>>> Fixed UI Bug Where Highest Max Score Displayed "10"
   m_SizeDelta: {x: 1200, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1585757302

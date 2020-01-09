@@ -1,6 +1,4 @@
 # Pong
-
-## Demonstration
 ![](https://thumbs.gfycat.com/UnhealthyComplicatedFruitbat-small.gif)
 
 ## How to Play
